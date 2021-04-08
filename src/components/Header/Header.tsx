@@ -10,7 +10,6 @@ const Header: React.FC = () => {
     if (e.key === "/") {
       ((inputElm.current as unknown) as HTMLInputElement).focus();
     }
-    console.log(e.key);
   };
 
   useEffect(() => {

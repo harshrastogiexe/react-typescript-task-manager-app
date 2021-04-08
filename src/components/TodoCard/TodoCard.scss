@@ -7,6 +7,7 @@
   border: 1px solid rgba($color: #000000, $alpha: 0.1);
   cursor: pointer;
   transition: all 100ms ease;
+  width: 100%;
 
   & + .todo-card {
     margin-top: 2rem;
@@ -14,6 +15,7 @@
 
   .todo-message {
     width: 80%;
+    text-transform: capitalize;
   }
 
   hr {

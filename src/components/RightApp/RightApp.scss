@@ -1,8 +1,16 @@
 $nuetral-300: #5b5b5b;
 
+.empty-list {
+  font-weight: 400;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: $nuetral-300;
+}
+
 .right-wrapper {
   // padding-top: 1rem;
   color: $nuetral-300;
+  width: 100%;
 }
 
 .action-name-title {
