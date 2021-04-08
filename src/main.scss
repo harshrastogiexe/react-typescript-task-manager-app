@@ -1,0 +1,25 @@
+$white: #fff;
+$nuetral-300: #5b5b5b;
+
+$poppins: "Poppins", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html[data-theme="light"] {
+  --background: $white;
+  --primary: $nuetral-300;
+}
+
+body {
+  background: var(--background);
+  color: var(--primary);
+  font-family: $poppins;
+  min-height: 100vh;
+  display: relative;
+}
