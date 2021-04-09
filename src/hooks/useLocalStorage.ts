@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useLocalStorage = <T,>(
+const useLocalStorage = <T>(
   key: string,
   defaultValue: T
 ): [T, React.Dispatch<React.SetStateAction<T>>] => {
@@ -8,6 +8,7 @@ const useLocalStorage = <T,>(
   const initialValue = data ? (JSON.parse(data) as T) : defaultValue;
 
   const [value, setValue] = useState<T>(initialValue);
+  console.count("Local Storage");
 
   useEffect(() => {
     window.localStorage.setItem(key, JSON.stringify(value));

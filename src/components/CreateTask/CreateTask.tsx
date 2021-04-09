@@ -1,7 +1,11 @@
 import createTask from "../../assets/create-task-logo.png";
 import "./CreateTask.scss";
 
-const CreateTask: React.FC<{ setVisible: Function,  }> = ({ setVisible }) => {
+interface Props {
+  setVisible: Function;
+}
+
+const CreateTask: React.FC<Props> = ({ setVisible }) => {
   return (
     <>
       <div className='create-task' onClick={() => setVisible(true)}>
